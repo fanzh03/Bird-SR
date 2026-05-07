@@ -1,0 +1,29 @@
+
+/PATH/miniconda3/bin/accelerate launch --config_file /PATH/DiT4SR-main/multi-gpu.yaml /PATH/DiT4SR-main/train/train_dit4sr_rl.py \
+--pretrained_model_name_or_path="/PATH/DiT4SR-main/preset/models/stable-diffusion-3.5-medium" \
+--transformer_model_name_or_path="/PATH/DiT4SR-main/preset/models/dit4sr_q" \
+--output_dir="/PATH/result" \
+--root_folders="/PATH/Data/dit4sr_train_data" \
+--lr_only_folder="/PATH/Data/dit4sr_train_data_reward" \
+--mixed_precision="fp16" \
+--learning_rate=1e-6 \
+--train_batch_size=8 \
+--gradient_accumulation_steps=1 \
+--null_text_ratio=0.2 \
+--dataloader_num_workers=0 \
+--checkpointing_steps=500 \
+--validation_image="assets/pipeline.jpg" \
+--validation_prompt="Cinematic, hyper sharpness, highly detailed, perfect without deformations, camera, hyper detailed photo." \
+--validation_steps=200 \
+--lpips_loss=1 \
+--lpips_ckpt="" \
+--lpips_loss_weight=1 \
+--clipiqa_loss=1 \
+--clipiqa_ckpt="" \
+--clipiqa_loss_weight=0.00001 \
+--maniqa_loss=0 \
+--maniqa_ckpt="" \
+--maniqa_loss_weight="" \
+--dino_loss=1 \
+--dino_ckpt="" \
+--dino_loss_weight="" \
