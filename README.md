@@ -33,7 +33,8 @@ conda activate dit4sr
 
 **Step 1: Download Checkpoints**
 
-- Download the [[Bird-SR checkpoints](https://huggingface.co/acceptee/DiT4SR)] and place them in: `preset/models/bird_sr`.
+- Download the [[Dit4SR checkpoints](https://huggingface.co/acceptee/DiT4SR)] and place them in: `preset/models/Dit4SR`.
+- Download the [[Bird-SR checkpoints](https://drive.google.com/drive/folders/1Hl5vHCqx88T9lMcgxnXzKyXRIi4FgBCT?usp=sharing)] and place them in: `preset/models/bird_sr`.
 - Download the [[stable-diffusion-3.5-medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)] and place it in: `preset/models/stable-diffusion-3.5-medium`.
 - Download the [[clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336)] and [[llava-v1.5-13b](https://huggingface.co/liuhaotian/llava-v1.5-13b)] and place them in: `llava_ckpt/`.
 
