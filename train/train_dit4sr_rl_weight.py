@@ -16,7 +16,7 @@
 import os
 import sys
 
-project_root = "/path/to/DiT4SR-main"
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, project_root)
 
 import argparse
