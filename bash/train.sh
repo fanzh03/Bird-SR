@@ -1,0 +1,15 @@
+accelerate launch --config_file multi-gpu.yaml train/train_dit4sr.py \
+--pretrained_model_name_or_path="preset/models/stable-diffusion-3.5-medium" \
+--transformer_model_name_or_path="preset/models/dit4sr_q" \
+--output_dir="experiments/dit4sr_base" \
+--root_folders="/PATH/training_datasets" \
+--mixed_precision="fp16" \
+--learning_rate=1e-6 \
+--train_batch_size=8 \
+--gradient_accumulation_steps=1 \
+--null_text_ratio=0.2 \
+--dataloader_num_workers=0 \
+--checkpointing_steps=1000 \
+--validation_image="assets/pipeline.png" \
+--validation_prompt="Cinematic, hyper sharpness, highly detailed, perfect without deformations, camera, hyper detailed photo." \
+--validation_steps=500 \
