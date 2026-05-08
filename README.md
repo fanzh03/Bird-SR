@@ -28,7 +28,7 @@ conda activate dit4sr
 ```
 
 
-## :surfer: Quick Inference
+## :surfer: Quick Start
 
 
 **Step 1: Download Checkpoints**
