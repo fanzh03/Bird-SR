@@ -7,9 +7,9 @@ This is the official PyTorch implementation of the paper:
 
 >**Bird-SR: Bidirectional Reward-Guided Diffusion for Real-World Image Super-Resolution**<br>
 
-![motivation](assets/motivation.png)
+![motivation](asset/motivation.png)
 
-![pipeline](assets/pipeline.png)
+![pipeline](asset/pipeline.png)
 
 
 ## :wrench: Dependencies and Installation
