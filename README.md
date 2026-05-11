@@ -125,7 +125,7 @@ If you find our repo useful for your research, please consider citing our paper:
 ```bibtex
 @article{fan2025birdsr,
   title={Bird-SR: Bidirectional Reward-Guided Diffusion for Real-World Image Super-Resolution},
-  author={},
+  author={Zihao Fan and Xin Lu and Yidi Liu and Jie Huang and Dong Li and Xueyang Fu and Baocai Yin},
   journal={arXiv preprint arXiv:2602.07069},
   year={2025}
 }
